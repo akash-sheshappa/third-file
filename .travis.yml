@@ -1,11 +1,8 @@
-1. language: python 
-2. python: 
-3. - "3.6" 
-4. cache: pip 
-5. # command to install dependencies 
-6. before_script: 
-7. - easy_install distribute 
-8. - pip install -r requirements.txt 
-9. # command to run tests 
-10. script: 
-11. - python <filename.py>
+language: python
+python:
+  - "3"
+cache: pip
+install:
+  - pip install -r requirements.txt
+script:
+  - python demofile.py
